@@ -4,11 +4,13 @@
     "version": "1.0",
     "description": "Balance chemical equations is a user-friendly extension designed to effortlessly balance chemical equations, ensuring accurate representation of chemical reactions.",
     "action": {
-      "default_popup": "popup.html"
+      "default_popup": "popup.html",
+      "default_icon": "/image/icon.png"
     },
+    
     "icons": {
-      "48": "icon.png",
-      "128": "icon.png"
+      "48": "/image/icon.png",
+      "128": "/image/icon.png"
     }
   }
   
