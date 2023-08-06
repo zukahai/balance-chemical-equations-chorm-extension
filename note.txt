@@ -11,6 +11,9 @@
       "48": "/image/icon.png",
       "128": "/image/icon.png"
     },
+    "background": {   
+      "service_worker": "background.js"   
+    },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
