@@ -6,6 +6,7 @@ function pthh(str){
         str = str.replaceAll(' ','');
         str = str.replaceAll('->','=');
         str = str.replaceAll('→','=');
+        console.log(str);
         //get left right
         let left = str.split('=')[0];
         let right = str.split('=')[1];
@@ -29,6 +30,17 @@ function pthh(str){
                 element_HH[y] = 0;
             }
         }
+
+         // Kiem tra xem so nguyen to co bi du hay khong
+        for (let x in dataRight) {
+            for (let y in dataRight[x]) {
+                if (element_HH[y] === undefined) {
+                    console.log(y, element_HH[y]);
+                    success = false;
+                }
+            }
+        }
+
         let N = left.length + right.length;
         let M = 0;
         for (let x in element_HH) {
@@ -80,7 +92,7 @@ function pthh(str){
         text = text.substring(0, text.length - 3);
         text = text + " = ";
         for (let x in resultRight) {
-            if (resultRight[x] == null || resultRight[x] <= 0)
+            if (resultRight[x] == null || resultRight[x] <= 0 || resultRight[x] !== resultRight[x])
                 success = false;
             text = text + ((resultRight[x] > 1) ? resultRight[x] : "") + x + " + ";
         }

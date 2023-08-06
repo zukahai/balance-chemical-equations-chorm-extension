@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
   
     displayButton.addEventListener('click', function() {
-      const inputValue = inputString.value;
+      let inputValue = inputString.value;
       const result = pthh(inputValue)
       const resultText = result['text'];
       const resultSuccess = result['success'];
