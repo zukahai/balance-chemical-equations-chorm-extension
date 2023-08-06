@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "String Input",
+    "version": "1.0",
+    "description": "Enter and display a string.",
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
