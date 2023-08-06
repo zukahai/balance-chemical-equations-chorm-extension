@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputString = document.getElementById('inputString');
     const outputPthh = document.getElementById('outputPthh');
     const outpoutElement = document.getElementById('element');
+
+    
   
     displayButton.addEventListener('click', function() {
       const inputValue = inputString.value;
@@ -28,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         th2.textContent = 'Quantity';
         tr.appendChild(th2);
         table.appendChild(tr);
-        
+
         for (let el in result['element']) {
           let tr = document.createElement('tr');
           let td = document.createElement('td');
