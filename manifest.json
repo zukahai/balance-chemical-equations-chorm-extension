@@ -5,6 +5,10 @@
     "description": "Enter and display a string.",
     "action": {
       "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon.png",
+      "128": "icon.png"
     }
   }
   
