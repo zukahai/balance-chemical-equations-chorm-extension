@@ -5,6 +5,7 @@ function pthh(str){
         //remove space
         str = str.replaceAll(' ','');
         str = str.replaceAll('->','=');
+        str = str.replaceAll('-->','=');
         str = str.replaceAll('→','=');
         console.log(str);
         //get left right
