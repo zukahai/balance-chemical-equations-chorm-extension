@@ -14,8 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
       outputPthh.textContent = resultText;
       if (resultSuccess) {
         outputPthh.style.color = 'green';
+        // An luu y
+        var noteDiv = document.getElementById("noteDiv");
+        noteDiv.classList.add("hidden");
       } else {
         outputPthh.style.color = 'red';
+        var noteDiv = document.getElementById("noteDiv");
+        //Hien luu y
+        noteDiv.classList.toggle("hidden");
       }
 
       outpoutElement.innerHTML = '';

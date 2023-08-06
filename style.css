@@ -74,3 +74,16 @@ body, h1, p, label, input, button {
   tr {
     border-bottom: 1px solid #ca1e1e;
   }
+
+  .note {
+
+    width: 100%;
+    background-color: #ffffcc;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
