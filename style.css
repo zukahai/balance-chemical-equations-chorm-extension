@@ -3,6 +3,7 @@ body, h1, p, label, input, button {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    text-align: center;
   }
   
   body {
@@ -24,11 +25,12 @@ body, h1, p, label, input, button {
   }
   
   input[type="text"] {
-    width: 100%;
+    width: calc(100% - 10px);
     padding: 5px;
-    font-size: 14px;
+    font-size: 30px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    font-weight: bold;
   }
   
   button {
@@ -40,6 +42,13 @@ body, h1, p, label, input, button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    /* center */
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    width: 100%;
   }
   
   button:hover {
@@ -50,4 +59,18 @@ body, h1, p, label, input, button {
     margin-top: 20px;
     font-size: 14px;
   }
+
+  table{
+    box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    width: 100%;
+  }
+
+  td, tr, th {
+    padding: 10px;
+    text-align: center;
+  }
   
+  tr {
+    border-bottom: 1px solid #ca1e1e;
+  }
