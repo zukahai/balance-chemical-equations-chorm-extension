@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "String Input",
+    "name": "Balance chemical equations",
     "version": "1.0",
-    "description": "Enter and display a string.",
+    "description": "Balance chemical equations is a user-friendly extension designed to effortlessly balance chemical equations, ensuring accurate representation of chemical reactions.",
     "action": {
       "default_popup": "popup.html"
     },

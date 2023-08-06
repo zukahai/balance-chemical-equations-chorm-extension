@@ -46,7 +46,7 @@ body, h1, p, label, input, button {
     background-color: #0056b3;
   }
   
-  #outputDiv {
+  #output {
     margin-top: 20px;
     font-size: 14px;
   }

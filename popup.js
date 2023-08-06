@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const displayButton = document.getElementById('displayButton');
     const inputString = document.getElementById('inputString');
-    const outputDiv = document.getElementById('outputDiv');
+    const outputPthh = document.getElementById('outputPthh');
   
     displayButton.addEventListener('click', function() {
       const inputValue = inputString.value;
-      outputDiv.textContent = `Your string: ${inputValue}`;
+      const result = pthh(inputValue)['text'];
+      console.log(result);
+      outputPthh.textContent = result;
     });
   });
   
