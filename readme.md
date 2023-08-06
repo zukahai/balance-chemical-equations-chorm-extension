@@ -7,7 +7,7 @@
 ### Bước 1: Chuẩn bị tệp mã nguồn của extension
 
 1. Tải file extension [Tại đây](https://github.com/zukahai/balance-chemical-equations-chorm-extension/archive/refs/heads/main.zip)
-2. Giải nén file vừa tair
+2. Giải nén file vừa tải.
 
 ### Bước 2: Truy cập trình duyệt extensions
 
