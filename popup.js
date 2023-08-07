@@ -1,3 +1,5 @@
+import {pthh} from './service/pthh.js';
+
 document.addEventListener('DOMContentLoaded', function() {
     const displayButton = document.getElementById('displayButton');
     const inputString = document.getElementById('inputString');

@@ -1,11 +1,11 @@
-function pthh(str){
+export function pthh(str){
     let text = 'Please double check your chemical equation'
     let success = true;
     try {
         //remove space
         str = str.replaceAll(' ','');
-        str = str.replaceAll('->','=');
-        str = str.replaceAll('-->','=');
+        str = str.replaceAll('-','');
+        str = str.replaceAll('>','=');
         str = str.replaceAll('→','=');
         console.log(str);
         //get left right
