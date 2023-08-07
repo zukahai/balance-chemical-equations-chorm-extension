@@ -1,5 +1,5 @@
 export function pthh(str){
-    let text = 'Please double check your chemical equation'
+    let text = 'Please check your chemical equation'
     let success = true;
     try {
         //remove space
