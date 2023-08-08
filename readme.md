@@ -42,9 +42,28 @@ Trước khi tiếp tục, hãy đảm bảo rằng bạn đã có trình duyệ
 2. Nhấp vào nút "Load unpacked" hoặc "Load Temporary Add-on", sau đó chọn thư mục mà bạn đã chuẩn bị ở Bước 1.
 3. Extension của bạn sẽ được tải lên và cài đặt thành công.
 
-### Bước 5: Kiểm tra extension
+### Bước 5: Cách sử dụng
 
-Sau khi tải extension thành công, bạn có thể kiểm tra và sử dụng extension bằng cách thử nghiệm chúng trên trình duyệt.
+Sau khi cài đặt extension thành công, tải trang quản lí trình duyệt extensions của bạn sẽ như sau:
 
-Lưu ý: Chế độ dev (developer mode) cho phép bạn cài đặt các extension chưa được ký số hoặc chưa được xác minh, điều này có thể làm tăng nguy cơ bảo mật. Hãy chỉ cài đặt các extension từ nguồn đáng tin cậy và chú ý không để chạy các extension không rõ nguồn gốc và tính năng của chúng.
+<p align="center"> <img src="./image/extension.png" alt="bg" /> </p>
 
+#### Cách sử dụng extension
+
+Để sử dụng extension bạn có 2 cách:
+
+Cách 1: Chọn extension trên thanh công cụ:
+
+<p align="center"> <img src="./image/et1.png" alt="bg" /> </p>
+
+Một ví dụ sử dụng:
+
+<p align="center"> <img src="./image/et2.png" alt="bg" /> </p>
+
+Cách 2: Chọn extension bằng cách bấm chuột phải
+
+Bôi đen phương trình bạn cần bằng và bấm chuột phải và chọn 'Balance chemical equations'
+
+<p align="center"> <img src="./image/et3.png" alt="bg" /> </p>
+
+Chúc bạn thành công.
