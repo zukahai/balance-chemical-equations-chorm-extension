@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const outpoutElement = document.getElementById('element');
 
 
-    inputString.addEventListener('keyup', function(event) {
+    inputString.addEventListener('keyup', handleInputEvent);
+    inputString.addEventListener('mouseup', handleInputEvent);
+    inputString.addEventListener('change', handleInputEvent);
+
+
+    function handleInputEvent(event) {
       let inputValue = inputString.value;
       const result = pthh(inputValue)
       const resultText = result['text'];
@@ -50,5 +55,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       outpoutElement.appendChild(table);
-    });
-  });
+    }
+});
