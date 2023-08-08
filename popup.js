@@ -1,14 +1,12 @@
 import {pthh} from './service/pthh.js';
 
 document.addEventListener('DOMContentLoaded', function() {
-    const displayButton = document.getElementById('displayButton');
     const inputString = document.getElementById('inputString');
     const outputPthh = document.getElementById('outputPthh');
     const outpoutElement = document.getElementById('element');
 
-    
-  
-    displayButton.addEventListener('click', function() {
+
+    inputString.addEventListener('keyup', function(event) {
       let inputValue = inputString.value;
       const result = pthh(inputValue)
       const resultText = result['text'];
@@ -23,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         outputPthh.style.color = 'red';
         var noteDiv = document.getElementById("noteDiv");
         //Hien luu y
-        noteDiv.classList.toggle("hidden");
+        noteDiv.classList.remove("hidden");
       }
 
       outpoutElement.innerHTML = '';
