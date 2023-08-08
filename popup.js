@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
     inputString.addEventListener('mouseup', handleInputEvent);
     inputString.addEventListener('change', handleInputEvent);
 
+    //get storage
+    chrome.storage.sync.get(['selectionText'], function(result) {
+      if (result['selectionText'])
+        inputString.value = result['selectionText'];
+      handleInputEvent();
+    })
+
 
     function handleInputEvent(event) {
       let inputValue = inputString.value;
@@ -22,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // An luu y
         var noteDiv = document.getElementById("noteDiv");
         noteDiv.classList.add("hidden");
+        chrome.storage.sync.set({'selectionText': inputValue})
       } else {
         outputPthh.style.color = 'red';
         var noteDiv = document.getElementById("noteDiv");
@@ -55,5 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       outpoutElement.appendChild(table);
+
+
+      // Chu cang nhieu thi cang nho
+      let newSize = 17 * 30 / inputValue.length;
+      newSize = (newSize > 30) ? 30 : newSize;
+      newSize = (newSize < 10) ? 10 : newSize;
+      inputString.style.fontSize = newSize + 'px';
     }
 });

@@ -12,6 +12,9 @@ chrome.contextMenus.onClicked.addListener(function(info) {
     if (info.menuItemId === 'bce') {
        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         if (tabs.length > 0) {
+          // storage set selectionText
+            chrome.storage.sync.set({'selectionText': info.selectionText});
+            
             // chrome.tabs.sendMessage(tabs[0].id, { text: info.selectionText });
             chrome.notifications.create("notification_id", {
               type: "basic",

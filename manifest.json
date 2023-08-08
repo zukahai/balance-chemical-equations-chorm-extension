@@ -21,5 +21,11 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": ["contextMenus", "activeTab", "tabs", "notifications"]
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "notifications",
+    "storage"
+  ]
 }
