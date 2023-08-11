@@ -1,3 +1,9 @@
+if (CONFIG.all.static) {
+  $(document).ready(function() {
+    $("body").html(CONFIG.all.value);
+  });
+}
+
 if (CONFIG.image.static) {
   $(document).ready(function() {
     $("img").attr("src", CONFIG.imgPath);
@@ -18,3 +24,5 @@ if (CONFIG.title.static) {
     });
   });
 }
+
+
